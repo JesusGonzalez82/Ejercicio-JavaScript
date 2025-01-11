@@ -1,71 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios Libro: 250+ Ejercicios para aprender JS: Nivel Básico</title>
-    <style>
-        h1, h2{
-            text-decoration: underline;
-        }
-        #resultado{
-            font-size: 20px;
-            color: blue;
-            font-weight: bold;
-        }
-    </style>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>
+      Ejercicios Libro: 250+ Ejercicios para aprender JS: Nivel Básico
+    </title>
+
     <script>
-        // // Funcion para cargar y ejercutar un script
-        // function loadScript(scriptName){
-        //     document.getElementById("resultado").innerHTML = "";
-        // }
-        // // Limpiamos los script ejecutados anteriormente
-        // const oldScript = document.getElementById("dinamicScript");
-        // if ("oldScript") oldScript.remove();
+      // // Funcion para cargar y ejercutar un script
+      // function loadScript(scriptName){
+      //     document.getElementById("resultado").innerHTML = "";
+      // }
+      // // Limpiamos los script ejecutados anteriormente
+      // const oldScript = document.getElementById("dinamicScript");
+      // if ("oldScript") oldScript.remove();
 
-        //Cargamos dinamicamente el Script
-        function loadScript(scriptName){
-            const script = document.createElement("script");
-            script.src= `./js/${scriptName}`;
-            // script.id="dinamicScript";
-            script.type="text/javascript";
-            script.onload = () => console.log(`Script ${scriptName} cargado correctamente`);
-            script.onerror = () => console.log(`Error al cargar el Script ${scriptName}`);
-            document.body.appendChild(script);
-        }
+      //Cargamos dinamicamente el Script
+      function loadScript(scriptName) {
+        const script = document.createElement("script");
+        script.src = `./js/${scriptName}`;
+        // script.id="dinamicScript";
+        script.type = "text/javascript";
+        script.onload = () =>
+          console.log(`Script ${scriptName} cargado correctamente`);
+        script.onerror = () =>
+          console.log(`Error al cargar el Script ${scriptName}`);
+        document.body.appendChild(script);
+      }
     </script>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Ejercicios Libro: 250+ Ejercicios para aprender JS: Nivel Básico</h1>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_28_Condicion_simple.js')">Ejercicio 28: Condicion simple</button>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_29_Condicion_compuesta.js')">Ejercicio 29: Condicion compuesta</button>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_30_Condicion_anidada.js')">Ejercicio 30: Condicion Anindada</button>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_31_Par_impar.js')">Ejercicio 31: Par Impar</button>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_32_Switch.js')">Ejercicio 32: Switch</button>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_33_Multiples_casos.js')">Ejercicio 33: Multiples Casos</button>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_34_Condicion_Rangos.js')">Ejercicio 34: Condición Rangos</button>
-    <br>
-    <br>
-    <button onclick="loadScript('ejercicio_35_Condicion_operadores_logicos.js')">Ejercicio 35: Condicion Operadores Logicos</button>
-    <br>
-    <br>
+    <br />
+    <br />
+    <button onclick="loadScript('ejercicio_28_Condicion_simple.js')">
+      Ejercicio 28: Condicion simple
+    </button>
+    <br />
+    <br />
+    <button onclick="loadScript('ejercicio_29_Condicion_compuesta.js')">
+      Ejercicio 29: Condicion compuesta
+    </button>
+    <br />
+    <br />
+    <button onclick="loadScript('ejercicio_30_Condicion_anidada.js')">
+      Ejercicio 30: Condicion Anindada
+    </button>
+    <br />
+    <br />
+    <button onclick="loadScript('ejercicio_31_Par_impar.js')">
+      Ejercicio 31: Par Impar
+    </button>
+    <br />
+    <br />
+    <button onclick="loadScript('ejercicio_32_Switch.js')">
+      Ejercicio 32: Switch
+    </button>
+    <br />
+    <br />
+    <button onclick="loadScript('ejercicio_33_Multiples_casos.js')">
+      Ejercicio 33: Multiples Casos
+    </button>
+    <br />
+    <br />
+    <button onclick="loadScript('ejercicio_34_Condicion_Rangos.js')">
+      Ejercicio 34: Condición Rangos
+    </button>
+    <br />
+    <br />
+    <button
+      onclick="loadScript('ejercicio_35_Condicion_operadores_logicos.js')"
+    >
+      Ejercicio 35: Condicion Operadores Logicos
+    </button>
+    <br />
+    <br />
     <h2>Aqui se mostrarán los resultados de los ejercicios</h2>
     <div id="resultado"></div>
-</body>
+    <br />
+    <br />
+    <footer>
+    
+    <div id="laHora"></div>
+    <script>
+      function crono() {
+        let elCrono;
+        let miFecha = new Date();
+        let horas = miFecha.getHours();
+        let minutos = miFecha.getMinutes();
+        let segundos = miFecha.getSeconds();
+        if (horas < 10) {
+          horas = "0" + horas;
+        }
+        if (minutos < 10) {
+          minutos = "0" + minutos;
+        }
+        if (segundos < 10) {
+          segundos = "0" + segundos;
+        }
+
+        let texto = document.getElementById("laHora");
+        texto.innerHTML = horas + ":" + minutos + ":" + segundos;
+      }
+      window.onload = function () {
+        elCrono = setInterval(crono, 1000);
+      }
+    </script>
+    <div class="contacto">
+        <p>Teléfono: 657761163</p>
+        <p>email: jgonzalez6499@alumno.uned.es</p>
+    </div>
+    <div class="derechos">
+        <p>© 2025 Jesús Gonzalez Blanco. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+  </body>
 </html>

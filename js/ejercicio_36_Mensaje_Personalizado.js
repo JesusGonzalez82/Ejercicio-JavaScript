@@ -6,13 +6,13 @@ criterios de edad y género.
 */
 
 let edad = parseInt(prompt("Que edad tienes?"));
-let genero = prompt("Ingrese sú Género(Masculino o Femenino)").trim().toLowerCase;
+let genero = prompt("Ingrese sú Género(Masculino o Femenino)").trim().toLowerCase();
 let resultado = document.getElementById("resultado");
 
 if (edad >= 18) {
-  if (genero == "masculino") {
+  if (genero === "masculino") {
     resultado.innerHTML = "Bienvenido señor";
-  } else if (genero == "femenino") {
+  } else if (genero === "femenino") {
     resultado.innerHTML = "Bienvenida señora";
   } else {
     resultado.innerHTML = "Bienvenid@";

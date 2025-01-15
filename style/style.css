@@ -2,17 +2,24 @@ h1,
 h2 {
   text-decoration: underline;
 }
+
+h1{
+  font-family: "Rubik Dirt", serif;
+  font-size: 2.5rem;
+}
+
 #resultado {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: blue;
   font-weight: bold;
+  padding-bottom: 50px; /* Ajusta el espacio según sea necesario */
 }
 footer {
   text-align: center;
   background-color: #676767;
   color: white;
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }

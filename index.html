@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
     <title>
       Ejercicios Libro: 250+ Ejercicios para aprender JS: Nivel Básico
     </title>
@@ -33,8 +38,7 @@
   </head>
   <body>
     <h1>Ejercicios Libro: 250+ Ejercicios para aprender JS: Nivel Básico</h1>
-    <br />
-    <br />
+
     <button onclick="loadScript('ejercicio_28_Condicion_simple.js')">
       Ejercicio 28: Condicion simple
     </button>
@@ -70,19 +74,41 @@
     </button>
     <br />
     <br />
-    <button
-      onclick="loadScript('ejercicio_35_Condicion_operadores_logicos.js')"
-    >
+    <button onclick="loadScript('ejercicio_35_Condicion_operadores_logicos.js')">
       Ejercicio 35: Condicion Operadores Logicos
     </button>
     <br />
     <br />
+    <button onclick="loadScript('ejercicio_36_Mensaje_Personalizado.js')">
+      Ejercicio 36: Condición con varios criterios
+    </button>
+    <br>
+    <br>
+    <button onclick="loadScript('ejercicio_37_Expresion_Ternaria.js')">
+      Ejercicio 37: Condición Ternaria
+    </button>
+    <br>
+    <br>
+    <button onclick="loadScript('ejercicio_38_Calculo_IMC.js')">
+      Ejercicio 38: Calculo IMC
+    </button>
+    <br>
+    <br>
+    <button onclick="loadScript('ejercicio_39_Conversion_Temperatura.js')">
+      Ejercicio 39: Conversión de Temperatura
+    </button>
     <h2>Aqui se mostrarán los resultados de los ejercicios</h2>
     <div id="resultado"></div>
-    <br />
-    <br />
+
     <footer>
     
+    <div class="contacto">
+        <p>Teléfono: 657761163</p>
+        <p>email: jgonzalez6499@alumno.uned.es</p>
+    </div>
+    <div class="derechos">
+        <p>© 2025 Jesús Gonzalez Blanco. Todos los derechos reservados.</p>
+    </div>
     <div id="laHora"></div>
     <script>
       function crono() {
@@ -108,13 +134,6 @@
         elCrono = setInterval(crono, 1000);
       }
     </script>
-    <div class="contacto">
-        <p>Teléfono: 657761163</p>
-        <p>email: jgonzalez6499@alumno.uned.es</p>
-    </div>
-    <div class="derechos">
-        <p>© 2025 Jesús Gonzalez Blanco. Todos los derechos reservados.</p>
-    </div>
     </footer>
   </body>
 </html>

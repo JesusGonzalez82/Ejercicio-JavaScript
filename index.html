@@ -26,6 +26,7 @@
       function loadScript(scriptName) {
         const script = document.createElement("script");
         script.src = `./js/${scriptName}`;
+        // script.src = `./js/funciones${scriptName}`;
         // script.id="dinamicScript";
         script.type = "text/javascript";
         script.onload = () =>
@@ -174,6 +175,35 @@
     </button>
     <br>
     <br>
+    <button onclick="loadScript('ejercicio_55_Tipo_Vehiculo.js')">
+      Ejercicio 55: Tipo de vehículo
+    </button>
+    <br>
+    <br>
+    <button onclick="loadScript('ejercicio_56_Dias_Habiles.js')">
+      Ejercicio 56: Días hábiles.
+    </button>
+    <br><br>
+    <button onclick="loadScript('ejercicio_57_Meses_de_anio.js')">
+      Ejercicio 57: Meses del Año
+    </button>
+    <br><br>
+  <fieldset>
+    <legend><h2>FUNCIONES</h2></legend>
+    <button onclick="loadScript('ejercicio_60_Funciones_1.js')">
+      Ejercicio 60: funciones 1. Saludo básico
+    </button>
+    <br><br>
+    <button onclick="loadScript('ejercicio_61_Funciones_2.js')">
+      Ejercicio 61: funciones 2. Área de un círculo
+    </button>
+    <br><br>
+    <button onclick="loadScript('ejercicio_62_Funciones_3.js')">
+      Ejercicio 62: funciones 3. Par o Impar
+    </button>
+    <br><br>
+  </fieldset>
+    <hr>
     <h2>Aqui se mostrarán los resultados de los ejercicios</h2>
     <div id="resultado"></div>
 

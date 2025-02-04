@@ -39,7 +39,8 @@
   </head>
   <body>
     <h1>Ejercicios Libro: 250+ Ejercicios para aprender JS: Nivel Básico</h1>
-
+  <fieldset class="basicos">
+    <legend><h2>Ejercicios Básicos</h2></legend>
     <button onclick="loadScript('ejercicio_28_Condicion_simple.js')">
       Ejercicio 28: Condicion simple
     </button>
@@ -188,8 +189,9 @@
       Ejercicio 57: Meses del Año
     </button>
     <br><br>
-  <fieldset>
-    <legend><h2>FUNCIONES</h2></legend>
+  </fieldset>
+  <fieldset class="funciones">
+    <legend><h2>Ejercicios con Funciones</h2></legend>
     <button onclick="loadScript('ejercicio_60_Funciones_1.js')">
       Ejercicio 60: funciones 1. Saludo básico
     </button>
@@ -202,11 +204,44 @@
       Ejercicio 62: funciones 3. Par o Impar
     </button>
     <br><br>
+    <button onclick="loadScript('ejercicio_63_Funciones_4.js')">
+      Ejercicio 63: funciones 4. Calcula el factorial
+    </button>
+    <br><br>
+    <button onclick="loadScript('ejercicio_64_Funciones_5.js')">
+      Ejercicio 64: funciones 5. Concatenar cadenas
+    </button>
+    <br><br>
+  </fieldset class="resultados">
+  <fieldset class="Parametros y Args">
+    <legend><h2>Ejercicios de Parámetros y Argumentos</h2></legend>
+    <button onclick="loadScript('Ejercicio_65_Parametros_Y_Args_1.js')">
+        Ejercicio 65: Calcular el area de un rectangulo.
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_66_Parametros_Y_Args_2.js')">
+      Ejercicio 66: Calcular el volumen de un cilindro.
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_67_Parametros_Y_Args_3.js')">
+      Ejercicio 67: Concatenar nombres.
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_68_Parametros_Y_Args_4.js')">
+      Ejercicio 68: Calcular la media de 3 números.
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_69_Parametros_Y_Args_5.js')">
+      Ejercicio 69: Saludo personalizado.
+    </button>
+    <br><br>
   </fieldset>
-    <hr>
-    <h2>Aqui se mostrarán los resultados de los ejercicios</h2>
+  
+  <fieldset>
+    <legend class="resultados"><h2>Aqui se mostrarán los resultados de los ejercicios</h2></legend>
     <div id="resultado"></div>
-
+  </fieldset>
+    <br><br>
     <footer>
     
     <div class="contacto">

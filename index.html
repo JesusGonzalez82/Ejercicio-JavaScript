@@ -36,11 +36,15 @@
         document.body.appendChild(script);
       }
     </script>
+    <script src="./js/funciones.js"></script>
   </head>
   <body>
     <h1>Ejercicios Libro: 250+ Ejercicios para aprender JS: Nivel Básico</h1>
-  <fieldset class="basicos">
-    <legend><h2>Ejercicios Básicos</h2></legend>
+    <button onclick="toggleFieldset('basicos')">Mostrar/Ocultar Básicos</button>
+  <fieldset class="basicos" id="basicos">
+    <legend><h2>Ejercicios Básicos</h2>
+    
+    </legend>
     <button onclick="loadScript('ejercicio_28_Condicion_simple.js')">
       Ejercicio 28: Condicion simple
     </button>
@@ -190,7 +194,8 @@
     </button>
     <br><br>
   </fieldset>
-  <fieldset class="funciones">
+  <button onclick="toggleFieldset('funciones')">Mostrar/Ocultar Funciones</button>
+  <fieldset class="funciones" id="funciones">
     <legend><h2>Ejercicios con Funciones</h2></legend>
     <button onclick="loadScript('ejercicio_60_Funciones_1.js')">
       Ejercicio 60: funciones 1. Saludo básico
@@ -212,8 +217,9 @@
       Ejercicio 64: funciones 5. Concatenar cadenas
     </button>
     <br><br>
-  </fieldset class="resultados">
-  <fieldset class="Parametros y Args">
+  </fieldset>
+  <button onclick="toggleFieldset('param')">Mostrar/Ocultar Parametros y Args</button>
+  <fieldset class="Parametros y Args" id="param">
     <legend><h2>Ejercicios de Parámetros y Argumentos</h2></legend>
     <button onclick="loadScript('Ejercicio_65_Parametros_Y_Args_1.js')">
         Ejercicio 65: Calcular el area de un rectangulo.
@@ -235,8 +241,35 @@
       Ejercicio 69: Saludo personalizado.
     </button>
     <br><br>
+    <button onclick="loadScript('Ejercicio_70_Parametros_Y_Args_6.js')">
+      Ejercicio 70: Calcula el área de un triangulo
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_71_Parametros_Y_Args_7.js')">
+      Ejercicio 71: Calcula el perimetro de un rectángulo
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_72_Parametros_Y_Args_8.js')">
+      Ejercicio 72: Genera un saludo en otro idioma
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_73_Parametros_Y_Args_9.js')">
+      Ejercicio 73: Calcula el area de un circulo con precisión decimal
+    </button>
+    <br><br>
+    <button onclick="loadScript('Ejercicio_74_Parametros_Y_Args_10.js')">
+      Ejercicio 74: Compara edades
+    </button>
+    <br><br>
   </fieldset>
-  
+  <button onclick="toggleFieldset('Arrays y Objetos')">Mostrar/Ocultar Arrays y Objetos</button>
+  <fieldset class="Arrays y Objetos" id="arrayObjetc">
+    <legend><h2>Ejercicios de Arrays y Objetos</h2></legend>
+    <button onclick="loadScript('Ejercicio_79_Arrays_Y_Objetos_1.js')">
+        Ejercicio 79: Sumar elementos de un Array
+    </button>
+    <br><br>
+  </fieldset>
   <fieldset>
     <legend class="resultados"><h2>Aqui se mostrarán los resultados de los ejercicios</h2></legend>
     <div id="resultado"></div>

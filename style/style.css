@@ -14,6 +14,12 @@ h1{
   font-weight: bold;
   padding-bottom: 50px; /* Ajusta el espacio según sea necesario */
 }
+#resultado2 {
+  font-size: 1.5rem;
+  color: blue;
+  font-weight: bold;
+  padding-bottom: 50px; /* Ajusta el espacio según sea necesario */
+}
 footer {
   text-align: center;
   background-color: #676767;

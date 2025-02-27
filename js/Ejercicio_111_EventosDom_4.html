@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../style/dom3.css"> -->
+    <title>Eventos Dom 4</title>
+</head>
+<body>
+    <!-- Eliminar un elemento HTML del DOM -->
+
+    <p id="mensaje">Este es el mensaje inicial</p>
+    <p id="mensaje2">Y este el mensaje que queremos borrar</p>
+
+    <button onclick="deleteElement()">Borrar Elemento</button>
+
+    <script>
+        function deleteElement(){
+            let elemento = document.getElementById('mensaje2');
+            elemento.parentNode.removeChild(elemento);
+        }
+    </script>
+</body>
+</html>

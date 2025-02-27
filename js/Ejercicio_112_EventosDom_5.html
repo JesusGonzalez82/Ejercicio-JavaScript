@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../style/dom3.css"> -->
+    <title>Eventos Dom 5</title>
+</head>
+<body>
+    <!-- Obtener y mostrar la información de un form HTML -->
+     <form action="" id="formulario">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email"><br>
+        <button type="button" onclick="showElement()">Mostrar Datos</button>
+     </form>
+     <div id="resultado"></div>
+     <script>
+        function showElement(){
+            let formulario = document.getElementById('formulario');
+            let resultado = document.getElementById('resultado');
+            let nombre = formulario.elements['nombre'].value;
+            let email = formulario.elements['email'].value;
+
+            resultado.innerHTML = "Nombre: " + nombre + "<br>"+ "\nEmail: " + email;
+        }
+     </script>
+</body>
+</html>

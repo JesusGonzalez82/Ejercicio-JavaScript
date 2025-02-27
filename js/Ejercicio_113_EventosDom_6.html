@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../style/dom3.css"> -->
+    <title>Eventos Dom 6</title>
+</head>
+<body>
+<!-- Cambiar el color de fondo de la página al hacer clic en un boton -->
+
+<p id="mensaje">Si quieres cambiar el color, pulsa el boton</p>
+<button onclick="changeColor(); changeMensaje()">Cambiamos de color??</button>
+
+
+
+<script>
+    function changeColor(){
+        document.body.style.backgroundColor = "#48e";
+    }
+
+    function changeMensaje(){
+        let resultado = document.getElementById('mensaje');
+        resultado.innerHTML = "Que color te gusta mas??"
+    }
+</script>
+</html>

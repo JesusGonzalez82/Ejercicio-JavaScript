@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM ejercicio 2</title>
+</head>
+<body>
+    <!-- Agregamos un nuevo elemento HTML al DOM -->
+     <div id="contenedor">
+        <button onclick="addElement()">Añadir Elemento</button>
+     </div>
+
+     <script>
+        let number = 0;
+
+        function addElement(){
+            let newElement = document.createElement('p');
+            newElement.innerText = "Este es el nuevo elemento " + (number++);
+            document.getElementById('contenedor').appendChild(newElement);
+        }
+     </script>
+
+</body>
+</html>

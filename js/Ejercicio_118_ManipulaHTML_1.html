@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar texto de un elemento HTML</title>
+</head>
+<body>
+    <p id="mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut ipsum consectetur odio praesentium distinctio sit corrupti, quasi nulla quaerat a quas error, sequi dolorem reiciendis iste dolores. Voluptate, itaque?</p>
+
+    <button onclick="cambiaTexto()">Pulsa Aqui</button>
+
+    <script>
+        function cambiaTexto(){
+            document.getElementById('mensaje').innerHTML = ('Y ahora en vez de un lorem, pues escribimos esta porqueria, por que no se programar nada mas.')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Lista</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+    </ul>
+    <button onclick="añadirElemento()">Añadir elemento</button>
+    <script>
+        
+        function añadirElemento(){
+            let lista = document.getElementById('lista');
+            let nuevoElemento = document.createElement('li');
+
+            nuevoElemento.innerText = "Nuevo Elemento";
+            lista.appendChild(nuevoElemento);
+    }
+
+    </script>
+    
+</body>
+</html>

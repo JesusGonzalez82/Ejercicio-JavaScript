@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar el contenido de un elemento</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cambiar el contenido de un elemento al escribir en un campo de texto -->
+    <label for="text">Introduce un texto:</label> 
+    <input type="text" oninput="actualizarTexto()">
+    
+     <p id="texto"></p>
+
+     <script>
+        function actualizarTexto(){
+            let input = document.querySelector('input');
+            let texto = document.getElementById('texto');
+
+            texto.innerText = 'Texto ingresado: ' + input.value;
+        }
+     </script>
+</body>
+</html>

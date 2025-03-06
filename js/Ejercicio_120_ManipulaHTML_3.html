@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar un elemento HTML</title>
+</head>
+<body>
+    <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corrupti itaque nobis, placeat ducimus quo consequuntur, qui mollitia distinctio fugiat et vel doloremque neque officia! Ipsam soluta eaque velit distinctio?</p>
+
+    <button onclick="removeText()">Elimina el Texto</button>
+
+    <script>
+        function removeText(){
+            let texto = document.getElementById('text');
+            texto.parentNode.removeChild(texto);
+        }
+
+    </script>
+</body>
+</html>

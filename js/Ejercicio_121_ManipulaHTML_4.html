@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar estilo HTML</title>
+</head>
+<body>
+
+    <!-- Cambiar el estilo de un elemento HTML -->
+    <p id="mensaje">Este es el mensaje del que vamos a editar el estilo</p>
+
+    <button type="button" onclick="cambiaEstilo()">Cambiamos??</button>
+        <script>
+            function cambiaEstilo(){
+               let elemento = document.getElementById('mensaje');
+               elemento.style.color = 'red';
+               elemento.style.fontFamily = 'Roboto';
+               elemento.style.fontWeight = 'bold';
+            }
+        </script>
+</body>
+</html>

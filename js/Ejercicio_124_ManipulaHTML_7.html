@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AÑadir un nuevo elemento</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+    </ul>
+        <button id="addElement" type="button">Añadir</button>
+
+    <script>
+        document.getElementById('addElement').addEventListener('click', () => {
+            const texto = prompt('Introduce el texto que quieras:');
+            if (texto) {
+                const elemento = document.createElement('li');
+                elemento.textContent = texto;
+                document.getElementById('lista').appendChild(elemento);
+            } else {
+                alert('No se añadió ningún texto.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar el src de una imagen</title>
+</head>
+<body>
+    <!-- Cambiar el atributo src de una imagen -->
+
+    <img src="/EntCliente - JS/Tema2/ejercicios/EjerciciosLibroAprendeJS/src/1.jpg" id="foto" alt="foto 1">
+
+    <button onclick="cambiaPic()">Cambiar imagen</button>
+
+    <script>
+        function cambiaPic(){
+            let imagen = document.getElementById('foto');
+
+            imagen.src = "/EntCliente - JS/Tema2/ejercicios/EjerciciosLibroAprendeJS/src/2.jpg"
+        }
+    </script>
+</body>
+</html>

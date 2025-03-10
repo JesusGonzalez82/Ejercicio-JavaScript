@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar y mostrar un elemento HTML</title>
+</head>
+<body>
+
+    <!-- Ocultar y mostrar un elemento HTML al hacer click en un boton -->
+    <p id="mensaje">Este es el mensaje que vamos a hacer desaparecer!!!</p>
+
+    <button type="button" id="boton" onclick="apareceDesaparece()">Haz clic y veras la magia</button>
+
+    <script>
+        function apareceDesaparece(){
+            let element = document.getElementById('mensaje');
+            let boton = document.getElementById('boton');
+            if (element.style.display === '' || element.style.display === 'block'){
+                element.style.display = 'none';
+                boton.textContent = 'Apareceeeeee!!!'
+            }else {
+                element.style.display = 'block';
+                boton.textContent = 'Abracadabra!'
+            }
+        }
+    </script>
+</body>
+</html>

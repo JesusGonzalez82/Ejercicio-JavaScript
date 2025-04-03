@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 127. Eliminar Elementos</title>
+</head>
+<body>
+    <p>Ahora vamos a eliminar todos los elementos de una lista al pulsar un boton</p>
+
+    <ul id="ul__list">
+        <li>Elemento  1</li>
+        <li>Elemento  2</li>
+        <li>Elemento  3</li>
+        <li>Elemento  4</li>
+        <br>
+    </ul>
+
+        <button type="button" onclick="borrarElementos()">Borrar Elementos</button>
+
+        <script>
+            function borrarElementos(){
+                let lista = document.getElementById('ul__list');
+                while (lista.firstChild){
+                    lista.removeChild(lista.firstChild);
+                }
+            }
+        </script>
+</body>
+</html>

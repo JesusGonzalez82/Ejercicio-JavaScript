@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 125. Cambiar el color de fondo de un elemento</title>
+</head>
+<body>
+    <p id="parrafo">Queremos cambiar el color de fondo de un elemento al pasar el ratón por encima</p>
+
+    <script>
+        let parraph = document.getElementById('parrafo');
+        parraph.onmouseover = function(){
+            this.style.backgroundColor = 'red';
+        };
+        parraph.onmouseout = function(){
+            this.style.backgroundColor = '#48e';
+        };
+    </script>
+</body>
+</html>

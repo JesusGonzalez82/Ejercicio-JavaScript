@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 129. Cambiar el color de un elemento</title>
+</head>
+<body>
+    <p id="parrafo">A este elementos le vamos a modificar el color de fondo</p>
+
+    <script>
+        let color = document.getElementById('parrafo');
+        color.addEventListener('mouseover', function(){
+            this.style.backgroundColor = 'black';
+            this.style.color = 'white';
+            // this.style.fontWeight = 'italic';
+        });
+        color.addEventListener('mouseout', function(){
+            this.style.backgroundColor = 'red';
+            this.style.color = 'white';
+            // this.style.fontWeight = 'bold';
+        });
+    </script>
+</body>
+</html>

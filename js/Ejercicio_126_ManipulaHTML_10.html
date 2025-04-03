@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 126. Cambiar el contenido de un Elemento</title>
+</head>
+<body>
+    <p id="parrafo">Este es el contenido que vamos a cambiar</p>
+    <button id="boton" onclick="cambiaContenido()">Pulsar</button>
+
+    <script>
+        function cambiaContenido(){
+        let cambiador = document.getElementById('parrafo');
+        cambiador.innerHTML = "Y ahora tenemos este mensaje";
+        }
+    </script>
+</body>
+</html>

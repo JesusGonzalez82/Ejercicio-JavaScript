@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 132. Cambiar el tamaño de un elemento</title>
+    <link rel="stylesheet" href="/EntClienteJS/Tema2/ejercicios/EjerciciosLibroAprendeJS/style/ej132.css">
+</head>
+<body>
+    <div class="box"></div>
+
+    <button id="aumenta" type="button">Aumentar</button>
+    <br><br>
+    <button id="disminuye" type="button">Disminuye</button>
+
+    <script>
+        let caja = document.querySelector(".box");
+
+        let aumentar = document.getElementById("aumenta");
+        let disminuir = document.getElementById("disminuye");
+
+        aumentar.addEventListener("click", function(){
+            caja.style.width = parseInt(getComputedStyle(caja).width)+ 10 + "px";
+            caja.style.height = parseInt(getComputedStyle(caja).height) + 10 + "px";
+        });
+
+        disminuir.addEventListener("click", function(){
+            caja.style.width = parseInt(getComputedStyle(caja).width) - 10 + "px";
+            caja.style.height = parseInt(getComputedStyle(caja).height) - 10 + "px";
+        });
+    </script>
+</body>
+</html>

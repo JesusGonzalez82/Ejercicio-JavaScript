@@ -1,0 +1,21 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    padding: 50px;
+    margin: auto;
+}
+button{
+    width: auto;
+    height: auto;
+    padding: 20px;
+}

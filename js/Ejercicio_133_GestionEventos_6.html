@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar un formulario</title>
+</head>
+<body>
+        <form action="" id="formulario">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Enviar</button>
+
+            <p id="mensaje"></p>
+
+            <script>
+                let formulario = document.getElementById("formulario");
+                let mensaje = document.getElementById("mensaje");
+
+                formulario.addEventListener("submit", function(event){
+                    event.preventDefault();
+                    mensaje.textContent ="Mensaje enviado correctamente";
+                });
+            </script>
+        </form> 
+</body>
+</html>
